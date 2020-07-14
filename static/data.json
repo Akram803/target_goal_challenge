@@ -1,0 +1,24 @@
+{
+    "Targets":
+        [
+            {
+                "name": "Prayer",
+                "this_week": [4, 5, 5, 4, 5, 5, 5],
+                "sub-targets": ["sub-1", "sub-2", "sub-3"],
+                "sub-targets-progres": [26, 10, 15]
+            },
+            {
+                "name": "English",
+                "this_week": [1, 1, 0, 1, 1, 1, 0],
+                "sub-targets": ["sub-1", "sub-2", "sub-3"],
+                "sub-targets-progres": [26, 10, 15]
+            },
+            {
+                "name": "Problem Solving",
+                "this_week": [0, 1, 1, 0, 1, 1, 1],
+                "sub-targets": ["sub-1", "sub-2", "sub-3"],
+                "sub-targets-progres": [26, 10, 15]
+            }
+        ]
+    
+}

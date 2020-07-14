@@ -1,0 +1,52 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} Ta-Go-Step {% endblock title %} </title>    
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" >    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.css" integrity="sha512-SUJFImtiT87gVCOXl3aGC00zfDl6ggYAw5+oheJvRJ8KBXZrr/TMISSdVJ5bBarbQDRC2pR5Kto3xTR0kpZInA==" crossorigin="anonymous" />
+
+</head>
+<body>
+
+{% comment %} navigation bar {% endcomment %}
+{% include 'nav-bar.html' %}
+
+
+
+<div class="container-fluid pl-1 mt-2">
+
+    {% block content %}
+
+    
+    
+    {% endblock content %}
+</div>
+
+
+{% include 'footer.html' %}
+
+
+
+
+<script src="{% static 'js/bootstrab/jquery-3.5.1.js' %}"></script>
+<script src="{% static 'js/bootstrab/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrab/bootstrap.js' %}"></script>
+
+
+<script src="{% static 'js/Chart.bundle.js' %}"></script>
+<script src="{% static 'js/mycharts.js' %}"></script>
+
+<script src="{% static 'js/main.js' %}"></script>
+
+
+
+
+</body>
+</html>
