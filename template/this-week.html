@@ -1,10 +1,13 @@
-{% extends 'base.html' %}
+{% extends 'main/base.html' %}
 
 {% block title %} this-week {% endblock title %}
 
 {% block content %}
 
+{% include 'main/main-bar.html' %}
 
+
+  
 <!-- week table -->
 <div class="row">
     <div class="col" >
@@ -41,5 +44,7 @@
         
     </div>
 </div>
+
+
 
 {% endblock content %}

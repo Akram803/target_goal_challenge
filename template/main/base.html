@@ -15,52 +15,43 @@
 </head>
 <body>
 
-{% comment %} navigation bar {% endcomment %}
-{% include 'nav-bar.html' %}
-
+<!--  -->
+{% include './nav-bar.html' %}
 
 
 <div class="container-fluid pl-1 mt-2">
+    
     <div class="row">
 
         <!-- side menu -->
-        <div class="col-md-2">
-        
-            <div class=""><h1> Targets </h1></div>
-
-            <ul class="list-group side-menu">
-
-                {% for target in targets %}
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        {{ target.name }}
-                        <span class="badge badge-primary badge-pill">0</span>
-                    </li>
-                {% endfor %}
-                
-            </ul>
+        <div class="col-md-3">
+            {% include './side-menu.html' %}
         </div>
 
+        <!-- main content -->
         <div class="col">
-            
-
-            <!--  -->
-            
-            <!--  -->
 
             {% block content %}
-
+            
             {% endblock content %}
+
+            {# include './main-bar.html' #}
+
         </div>
+            
+                
+
+
 
     </div>
+
 </div>
 
 
-
-
-
-
-{% include 'footer.html' %}
+<br>
+<br>
+<br>
+{% include './footer.html' %}
 
 
 

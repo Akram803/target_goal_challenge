@@ -6,7 +6,7 @@ $(document).ready(function(){
         data: "data",
         dataType: "json",
         success: function (response) {
-            create_table(response.Targets)
+            // create_table(response.Targets)
         }
     });
 

@@ -17,6 +17,9 @@ def HomeView(request, *args, **kwargs):
 
 def this_week(req, *args, **kwargs):
     return render(req, "this-week.html")
+
+def goals(req, *args, **kwargs):
+    return render(req, "goals.html")
     
 
 
