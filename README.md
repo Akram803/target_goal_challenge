@@ -1,2 +1,2 @@
 # target_goal_challenge
-## under development
+## under development (deprecated)
